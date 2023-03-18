@@ -40,14 +40,16 @@ const Header = () => {
               <nav>
                 <ul>
                   <li onClick={() => navigate('/')}>HOME</li>
-                  <li>ABOUT</li>
-                  <li>CATEGORIES</li>
+                  <li onClick={() => navigate('/')}>ABOUT</li>
+                  <li onClick={() => navigate('/')}>CATEGORIES</li>
                 </ul>
               </nav>
           </div>
 
           <div className="image">
-            <h1 onClick={() => navigate('/')}>ECOMMERCE...</h1>
+            <h1 onClick={() => navigate('/')}>ECOMMERCE STORE...</h1>
+            
+
           </div>
 
           <div className="right">
