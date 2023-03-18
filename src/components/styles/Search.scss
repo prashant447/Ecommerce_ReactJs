@@ -1,0 +1,74 @@
+
+.search{
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+   padding: 1rem 0;
+   transform: translateY(100%);
+   animation: searchcart 1s ease-in-out forwards;
+    form{
+        position: relative;
+        input{
+            border: none;
+            text-align: center;
+            width: 100%;
+            padding: 1.5rem 0;
+            outline: none;
+             font-size: 1.5rem;
+            border-bottom: 1px solid grey;
+            &::placeholder{
+                color: black;
+                font-size: 1.7rem;
+                outline: none;
+                font-weight: 600;
+            }
+    
+           
+        }
+
+        p{
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 0.5rem 0;
+         }
+         svg{
+            position: absolute;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+         }
+    }
+
+    .search-item{
+        cursor: pointer;
+        .add-to-cart{
+            width: 100%;
+           
+
+            .card-details{
+                cursor: pointer;
+                .para-search{
+                    font-size: 0.7rem ;
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+       
+    }
+
+   
+}
+
+@keyframes searchcart {
+    0%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

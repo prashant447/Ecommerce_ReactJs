@@ -1,0 +1,127 @@
+.single-product-container{
+
+
+width: 100%;
+
+.single-item{
+    display: flex;
+       
+    align-items: center;
+      width: 70%;
+      margin:5rem auto ;
+      gap: 2rem;
+      
+      .right{
+        
+        
+        img{
+           
+            background-color: rgb(220, 219, 219);
+            
+        }
+    }
+
+    .left{
+        
+        h3{
+            padding: 0.5rem 0;
+           
+        }
+
+        p{
+         padding-bottom: 1.5rem;
+         
+        }
+
+        .info{
+            display: flex;
+            align-items: center;
+           
+            padding: 1rem 0;
+
+            .para-info{
+                padding: 0.6 2rem;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                border-left: none;
+                border-right: none;
+            }
+
+            button{
+                padding: 0.6rem 1rem;
+                background-color: white;
+                border: 1px solid black;
+                outline: none;
+                color: black;
+               cursor: pointer;
+            }
+
+            
+            .cart-icon{
+                padding: 0.7rem 2.5rem;
+                background-color: white;
+                border: transparent;
+                outline: none;
+                color: black;
+                margin: 0 0.5rem;
+                background-color: rgb(179, 0, 255);
+                transition: all 0.5s;
+                cursor: pointer;
+                color: white;
+                position: relative;
+                &:hover{
+                    background-color: rgb(138, 2, 196);
+                }
+                svg{
+                    font-size: 1.1rem ;
+                    position: absolute;
+                    left: 17px;
+                }
+            }
+        }
+        .social-icon{
+            display: flex;
+            flex-direction: column;
+            padding: 1.2rem 0;
+
+            span{
+                padding: 0.3rem ;
+                
+                svg{
+                   
+                    margin:0 0.4rem;
+                    margin-bottom: -2px;
+                    transition: all 0.5s;
+
+                    &:hover{
+                    color: rgb(179, 0, 255);
+                    cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+}
+
+@media only screen and (max-width:1336px){
+    .single-product-container .single-item {
+        display: block;
+    }
+
+    .single-product-container .single-item .right img {
+       width: 60%;
+    }
+
+    .single-product-container .single-item .left .info {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+    }
+}
+
+
+
+ 

@@ -1,0 +1,99 @@
+
+.header{
+    background-color: rgb(39 0 64);
+    color: white;
+    padding: 1rem;
+   position: relative;
+        
+    .main-header{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+       ul{
+        display: flex;
+        
+        list-style-type: none;
+        li{
+            padding: 0 0.5rem;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover{
+                color: rgb(216, 144, 252);
+            }
+        }
+          
+       }
+    }
+
+    .image{
+        h1{
+            font-size: 1.5rem;
+            cursor: pointer;
+            font-weight: 500;
+        }
+    }
+
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        
+        svg{
+            font-size: 1.4rem;
+      cursor: pointer;
+        }
+
+        .cart-icon{
+         position: relative;
+           cursor: pointer;
+         span{
+            background-color: rgb(150, 3, 255);
+            padding: 0.2rem 0.5rem;
+            border-radius: 50%;
+            position: absolute;
+            font-size: 0.6rem;
+            left: 12px;
+            top: -13px;
+            
+         }
+        }
+    }
+
+    &.sticky-header{
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        animation: sticky 1s linear forwards;
+    }
+}
+
+@keyframes sticky {
+    0%{transform: translateY(-60px);}
+    100%{transform: translateY(0);}
+    
+}
+
+
+// media querry
+
+@media only screen and (max-width:630px) {
+    .header .main-header ul {
+        display: none;
+        list-style-type: none;
+    }
+
+    .header .main-header {
+      
+        justify-content: space-between;
+       
+}
+
+.header .image h1 {
+width: 60vw;
+}
+
+}      
+

@@ -1,0 +1,156 @@
+
+
+.cart{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+     
+    top: 0;
+   z-index: 1;
+   transform: translateX(100%);
+     animation: showCart 0.3s ease-in forwards ;
+    .opacity{
+        background-color: rgba(0, 0, 0, 0.571);
+         
+       
+       
+    }
+    
+    
+    .cart-content{
+      
+        background-color: white;
+        color: black;
+       
+
+        .first-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+            width: 100%;
+            padding: 1rem 0.5rem;
+            cursor: pointer;
+            h3{
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            .close{
+
+              position: relative;
+
+                p{
+                    font-weight: 500;
+                 
+                    svg{
+                        position: absolute;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        left: -21px;
+                        top: 3px;
+                       
+                    }
+                }
+            }
+           
+        }
+
+
+        .second-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+           
+            .no-product{
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+            
+                span{
+                    color: rgba(9, 9, 9, 0.205);
+                     display: block;
+                     text-align: center;
+                    svg{
+                        font-size: 6rem;
+                    }
+                }
+                p{
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    padding: 1rem 0;
+                }
+
+                button{
+                    background-color: rgb(102, 0, 133);
+                    color: white;
+                    padding: 0.4rem ;
+                    border: transparent;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: rgba(107, 2, 139, 0.989);
+                    }
+
+                }
+
+            }
+        }
+
+
+
+
+        .subtotal{
+          
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0.5rem ;
+           
+          
+            .total{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.5rem;
+                span{
+                    font-weight: 600;
+                }
+                
+            }
+            button{
+                margin-top: 0.5rem;
+                background-color: rgb(102, 0, 133);
+                text-align: center;
+               
+                color: white;
+                padding: 0.5rem 2rem ;
+                border: transparent;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgba(107, 2, 139, 0.989);
+                }
+        
+            }
+            
+        }
+       
+    
+    }
+}
+
+
+
+@keyframes showCart {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+
