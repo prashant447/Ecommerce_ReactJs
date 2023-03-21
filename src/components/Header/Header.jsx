@@ -47,7 +47,7 @@ const Header = () => {
           </div>
 
           <div className="image">
-            <h1 onClick={() => navigate('/')}>ECOMMERCE STORE...</h1>
+            <h1 onClick={() => navigate('/')}>Budget Supreme</h1>
             
 
           </div>
